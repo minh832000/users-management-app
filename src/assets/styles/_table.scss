@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  text-align: center;
+
+  th {
+    background-color: #d3ebcd;
+  }
+
+  tr {
+    height: 47px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 20px;
+    }
+    td:last-child {
+      border-bottom-right-radius: 20px;
+    }
+  }
+}
