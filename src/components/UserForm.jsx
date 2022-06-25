@@ -67,7 +67,7 @@ const UserForm = ({ onChangeForm, user }) => {
   };
 
   return (
-    <div className="w-1/3 px-7">
+    <div className="lg:w-1/3 sm:w-full w-full lg:px-7 sm:px-3">
       <form onSubmit={(e) => handleSubmit(e)}>
         {/* First Name Field */}
         <div className="mb-5">
@@ -168,7 +168,7 @@ const UserForm = ({ onChangeForm, user }) => {
         <div className="mb-3">
           <button
             type="submit"
-            className="w-full py-3 bg-green-700 cursor-pointer rounded-lg border  border-green-500 uppercase font-semibold">
+            className="w-full py-2 bg-green-700 cursor-pointer rounded-lg border  border-green-500 uppercase font-semibold">
             {user && 'Update'}
             {!user && 'Add'}
           </button>

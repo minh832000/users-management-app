@@ -6,9 +6,12 @@ const UserList = ({ users, onUpdate, onDelete }) => {
     onUpdate(user);
   };
   return (
-    <div className="w-2/3 px-7 overflow-x-auto">
+    <div className="lg:w-2/3 sm:w-full w-full lg:px-7 sm:px-3 lg:mt-0 mt-3 overflow-x-scroll">
       {users.length > 0 && (
         <table>
+          <caption className="uppercase text-xl font-semibold mb-3">
+            List of users
+          </caption>
           <thead>
             <tr>
               <th>ID</th>
