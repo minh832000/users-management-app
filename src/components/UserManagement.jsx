@@ -23,6 +23,7 @@ const UserManagement = () => {
   }, []);
 
   const handleChangeForm = async (dt) => {
+    alert('Wait a minute...');
     if (!selectedUser) {
       const res = await userAPI.create(dt);
       if (res) {
@@ -44,7 +45,7 @@ const UserManagement = () => {
   };
 
   const handleDeleteUser = async (id) => {
-    console.log(id);
+    alert('Wait a minute...');
     const res = await userAPI.delete(id);
     if (res) {
       alert(`Delete user ${res.firstName} successfully!!!`);
